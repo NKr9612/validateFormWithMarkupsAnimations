@@ -1,0 +1,43 @@
+@mixin positionMark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -2;
+}
+@mixin textStyle {
+  font-size: 35px;
+  color: white;
+}
+@mixin textMedia {
+  @media (max-width: 400px) {
+    font-size: 22px;
+  }
+}
+
+.gz {
+  background-image: linear-gradient(45deg, pink, hotpink);
+  @include positionMark();
+  &__text {
+    @include textStyle();
+    @include textMedia();
+  }
+}
+
+.sorry {
+  background-image: linear-gradient(
+    45deg,
+    rgb(37, 93, 167),
+    rgb(105, 195, 255)
+  );
+  @include positionMark();
+  &__text {
+    @include textStyle();
+    @include textMedia();
+  }
+}

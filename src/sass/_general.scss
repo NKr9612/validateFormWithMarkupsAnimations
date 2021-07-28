@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+@mixin general {
+  font-family: "Lato", "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  @include general();
+}
+body {
+  overflow: hidden;
+  background-color: #3f3f5e;
+}

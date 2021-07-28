@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Aplikacja</title>
+  </head>
+
+  <body>
+    <div class="fWrapper">
+      <h1 class="fWrapper__header">Napisz kim jesteś!</h1>
+      <form class="fWrapper__form">
+        <input
+          type="text"
+          placeholder="Imię..."
+          class="fWrapper__input fWrapper__input--first"
+        />
+        <input
+          type="text"
+          placeholder="Nazwisko..."
+          class="fWrapper__input fWrapper__input--second"
+        />
+        <input
+          type="text"
+          placeholder="Nazwa firmy..."
+          class="fWrapper__input fWrapper__input--third"
+        />
+
+        <button class="fWrapper__btnSubmit">Zatwierdź</button>
+      </form>
+    </div>
+    <div class="gWrapper">
+      <div
+        class="
+          gWrapper__element gWrapper__element--positive gWrapper__element--one
+        "
+      ></div>
+      <div
+        class="
+          gWrapper__element gWrapper__element--positive gWrapper__element--two
+        "
+      ></div>
+      <div
+        class="
+          gWrapper__element gWrapper__element--positive gWrapper__element--three
+        "
+      ></div>
+      <div
+        class="
+          gWrapper__element gWrapper__element--negative gWrapper__element--four
+        "
+      ></div>
+      <div
+        class="
+          gWrapper__element gWrapper__element--negative gWrapper__element--five
+        "
+      ></div>
+      <div
+        class="
+          gWrapper__element gWrapper__element--negative gWrapper__element--six
+        "
+      ></div>
+      <p class="gWrapper__timer"></p>
+    </div>
+
+    <div class="afterMark">
+      <div class="gz">
+        <p class="gz__text">
+          Gratulację! Wygrałeś hulajnogę!
+          <p class="score"></p>
+        </p>
+      </div>
+      <div class="sorry">
+        <p class="sorry__text">
+          Niestety... Nic nie wygrałeś.
+          <p class="score"></p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
